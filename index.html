@@ -8,10 +8,37 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
     <link rel="icon" href="/public/logo-game-tournament.png">
-    <script src="main.js"></script>
+    
   </head>
   <body>
     <div class="global_div">
+      <div class="shadow-div">
+        <form action="" class="register-form">
+          <button id="close-form" class="remove-form"></button>
+          <h1 class="register-title">Criar Registro</h1>
+          <label for="name" class="register-label">Nome completo</label>
+          <input placeholder="Nome" type="text" name="" id="name" class="register-input">
+
+          <label for="email" class="register-label">E-mail</label>
+          <input  placeholder="Email" type="email" name="" id="email" class="register-input">
+
+          <label for="login" class="register-label">Login</label>
+          <input  placeholder="Login" type="text" name="" id="login" class="register-input">
+
+          <label for="password" class="register-label">Senha</label>
+          <input  placeholder="*********" type="password" name="" id="password" class="register-input">
+
+          <label for="game-select" class="register-label">Selecione seu jogo:</label>
+          <input type="list" name="" id="game-select" class="register-input">
+
+          <div class="register-agree">
+            <input type="checkbox" name="" id="agree">
+            <label for="agree" class="">Estou de acordo com as regras do campeonato</label>
+          </div>
+
+          <button class="" type="submit">Inscrever-se</button>
+        </form>
+      </div>
       <section class="front_section">
         <header class="header1">
           <div class="header-container">
@@ -57,7 +84,7 @@
                   alt=""
                   srcset=""
                 />
-                <h3 class="card-desc">10 de novembro, 14:00</h3>
+                <h3 class="card-desc">30 de novembro, 14:00</h3>
               </div>
             </div>
 
@@ -79,22 +106,22 @@
             <div class="timer-section">
               <div class="timer">
                 <div class="timer-tag">
-                  <h1 class="timer-count">09</h1>
+                  <h1 id="days" class="timer-count">09</h1>
                   <p class="">DIAS</p>
                 </div>
                 :
                 <div class="timer-tag">
-                  <h1 class="timer-count">41</h1>
+                  <h1 id="hours" class="timer-count">41</h1>
                   <p class="">HORAS</p>
                 </div>
                 :
                 <div class="timer-tag">
-                  <h1 class="timer-count">19</h1>
+                  <h1 id="minutes" class="timer-count">19</h1>
                   <p class="">MINUTOS</p>
                 </div>
                 :
                 <div class="timer-tag">
-                  <h1 class="timer-count">54</h1>
+                  <h1 id="seconds" class="timer-count">54</h1>
                   <p class="">SECUNDOS</p>
                 </div>
               </div>
@@ -252,6 +279,7 @@
       </main>
     </div>
   </body>
+  <script src="main.js"></script>
 </html>
 
 <!-- Se inscreva em nosso campeonato para competir contra os melhores no seu jogo favorito e concorra a várias premiações. -->
